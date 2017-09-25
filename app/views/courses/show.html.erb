@@ -2,7 +2,11 @@
 
 <div class="booyah-box col-10 offset-1">
   <h1><%= @course.title %></h1>
-<br />
+<div class='text-center'>
+  <%= image_tag @course.image, class: 'image-fluid' %>
+</div>
+<br class='clear'/>
+
 <div class='row'>
   <div class="col-sm-4 col-12 text-center">
     <span class="badge badge-default">

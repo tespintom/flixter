@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome";
+
 .navbar {
 font-family: "Helvetica Neue", Helvetica;
 font-weight: 200;
@@ -102,4 +104,8 @@ font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, 
 .lesson a b{
   font-weight: 100;
   font-size: 25px;
+}
+
+ul {
+  list-style-type: none;
 }

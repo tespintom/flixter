@@ -17,17 +17,17 @@
     });
   });
 
-  $(function() {
-    $('.sections').sortable({
+  $('.sections').sortable({
       update: function( event, ui ) {
         $.ajax({
           type: 'PUT',
           url: ui.item.data('update-url'),
           dataType: 'json',
-          data: {section: { row_order_position: ui.item.index()}}
+          data: { section: { row_order_position: ui.item.index() } }
         });
       }
     });
+
   });
 </script>
 
@@ -56,7 +56,8 @@
         <%= section.title %>
       </div>
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary btn-lng float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%=instructor_section_path(section)%>">
+      <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+
         New Lesson...
       </button>
 
